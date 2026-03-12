@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wishlist - WanderIndia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Your Wishlist</h1>
+<button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<nav class="navbar">
+<a href="tourism.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a class="active" href="wishlist.html">Wishlist</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+</nav>
+
+<section>
+
+<h2 class="section-title">Saved Favorites</h2>
+
+<div id="wishlistContainer"></div>
+
+</section>
+
+<footer>
+<p>© 2026 WanderIndia | Tourism Capstone Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+
+document.addEventListener("DOMContentLoaded",function(){
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || []
+
+let container = document.getElementById("wishlistContainer")
+
+if(wishlist.length===0){
+
+container.innerHTML = `
+<div class="wishlist-empty">
+No favorites yet.
+</div>
+`
+
+}else{
+
+wishlist.forEach(place=>{
+
+let item=document.createElement("div")
+
+item.className="wishlist-item"
+
+item.innerHTML=`
+
+<span class="wishlist-name">${place}</span>
+
+<div class="wishlist-buttons">
+
+<button class="book-btn" onclick="bookPlace('${place}')">
+Book Now
+</button>
+
+<button class="remove-btn" onclick="removeFromWishlist('${place}')">
+Remove
+</button>
+
+</div>
+
+`
+
+container.appendChild(item)
+
+})
+
+}
+
+})
+
+</script>
+
+</body>
+</html>

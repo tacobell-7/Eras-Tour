@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Destinations - WanderIndia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>Tour Packages</h1>
+<button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<nav class="navbar">
+<a href="tourism.html">Home</a>
+<a class="active" href="destinations.html">Destinations</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="wishlist.html">Wishlist</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+</nav>
+
+<section>
+
+<h2 class="section-title">Available Packages</h2>
+
+<input type="text" id="searchBar" placeholder="Search destinations..." style="width:80%;padding:10px;margin:20px auto;display:block;border:1px solid #ccc;border-radius:6px;">
+
+<div class="grid-container">
+
+<div class="card">
+<img src="images/Ganga-Aarti-Varanasi-1.jpg">
+<h3>Varanasi Ganga Aarti</h3>
+<p>📍 Varanasi, Uttar Pradesh</p>
+<p>💰 Price: ₹1800</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: Oct – March</p>
+<button onclick="bookPlace('Varanasi Ganga Aarti')">Book Now</button>
+<button onclick="addToWishlist('Varanasi Ganga Aarti')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/qutub.webp">
+<h3>Qutub Minar</h3>
+<p>📍 Delhi</p>
+<p>💰 Price: ₹1600</p>
+<p>⭐ Rating: 4.7</p>
+<p>🌤 Best Time: Oct – Feb</p>
+<button onclick="bookPlace('Qutub Minar')">Book Now</button>
+<button onclick="addToWishlist('Qutub Minar')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/gate.webp">
+<h3>Gateway of India</h3>
+<p>📍 Mumbai, Maharashtra</p>
+<p>💰 Price: ₹1700</p>
+<p>⭐ Rating: 4.7</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Gateway of India')">Book Now</button>
+<button onclick="addToWishlist('Gateway of India')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/ooty.jpg">
+<h3>Ooty</h3>
+<p>📍 Tamil Nadu</p>
+<p>💰 Price: ₹3500</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: April – June</p>
+<button onclick="bookPlace('Ooty')">Book Now</button>
+<button onclick="addToWishlist('Ooty')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/dar.jpg">
+<h3>Darjeeling Tea Gardens</h3>
+<p>📍 West Bengal</p>
+<p>💰 Price: ₹3200</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: March – May</p>
+<button onclick="bookPlace('Darjeeling Tea Gardens')">Book Now</button>
+<button onclick="addToWishlist('Darjeeling Tea Gardens')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/goa.jpg">
+<h3>Goa Beaches</h3>
+<p>📍 Goa</p>
+<p>💰 Price: ₹4000</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Goa Beaches')">Book Now</button>
+<button onclick="addToWishlist('Goa Beaches')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/keralaa.jpg">
+<h3>Kerala Backwaters</h3>
+<p>📍 Kerala</p>
+<p>💰 Price: ₹4200</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: Sept – March</p>
+<button onclick="bookPlace('Kerala Backwaters')">Book Now</button>
+<button onclick="addToWishlist('Kerala Backwaters')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/kashmir.jpg">
+<h3>Ladakh</h3>
+<p>📍 Northern Himalayas</p>
+<p>💰 Price: ₹5000</p>
+<p>⭐ Rating: 4.9</p>
+<p>🌤 Best Time: May – Sept</p>
+<button onclick="bookPlace('Ladakh')">Book Now</button>
+<button onclick="addToWishlist('Ladakh')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/ramoji.jpg">
+<h3>Ramoji Film City</h3>
+<p>📍 Hyderabad, Telangana</p>
+<p>💰 Price: ₹2000</p>
+<p>⭐ Rating: 4.6</p>
+<p>🌤 Best Time: Oct – Feb</p>
+<button onclick="bookPlace('Ramoji Film City')">Book Now</button>
+<button onclick="addToWishlist('Ramoji Film City')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/taj-mahal.jpeg">
+<h3>Taj Mahal</h3>
+<p>📍 Agra</p>
+<p>💰 Price: ₹3000</p>
+<p>⭐ Rating: 4.9</p>
+<p>🌤 Best Time: Oct – March</p>
+<button onclick="bookPlace('Taj Mahal')">Book Now</button>
+<button onclick="addToWishlist('Taj Mahal')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/golden-temple.jpg">
+<h3>Golden Temple</h3>
+<p>📍 Amritsar</p>
+<p>💰 Price: ₹2500</p>
+<p>⭐ Rating: 4.8</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Golden Temple')">Book Now</button>
+<button onclick="addToWishlist('Golden Temple')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/hampi.cms">
+<h3>Hampi</h3>
+<p>📍 Karnataka</p>
+<p>💰 Price: ₹2800</p>
+<p>⭐ Rating: 4.7</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Hampi')">Book Now</button>
+<button onclick="addToWishlist('Hampi')">❤️ Add to Wishlist</button>
+</div>
+
+<div class="card">
+<img src="images/mysore.jpg">
+<h3>Mysore Palace</h3>
+<p>📍 Karnataka</p>
+<p>💰 Price: ₹2200</p>
+<p>⭐ Rating: 4.6</p>
+<p>🌤 Best Time: Oct – Feb</p>
+<button onclick="bookPlace('Mysore Palace')">Book Now</button>
+<button onclick="addToWishlist('Mysore Palace')">❤️ Add to Wishlist</button>
+</div>
+
+</div>
+</section>
+
+<div id="wishlistPopup" style="display:none;position:fixed;top:50%;left:50%;transform:translate(-50%,-50%);background:#fff;padding:20px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.3);z-index:1000;text-align:center;">
+<p id="wishlistPopupText"></p>
+<button onclick="document.getElementById('wishlistPopup').style.display='none'">Close</button>
+</div>
+
+<script>
+
+function addToWishlist(place){
+
+let wishlist = JSON.parse(localStorage.getItem("wishlist")) || []
+
+wishlist.push(place)
+
+localStorage.setItem("wishlist",JSON.stringify(wishlist))
+
+document.getElementById("wishlistPopupText").innerText = place + " added to wishlist ❤️"
+
+document.getElementById("wishlistPopup").style.display="block"
+
+}
+
+function bookPlace(place){
+
+localStorage.setItem("selectedPlace",place)
+
+window.location.href="booking.html"
+
+}
+
+</script>
+
+</body>
+</html>

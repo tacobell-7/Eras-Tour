@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery - WanderIndia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>WanderIndia</h1>
+  <button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<nav class="navbar">
+  <a href="tourism.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Booking</a>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Signup</a>
+</nav>
+
+<section>
+  <h2 class="section-title">India Travel Gallery</h2>
+
+  <div class="grid-container">
+
+    <div class="card">
+      <img src="images/Ganga-Aarti-Varanasi-1.jpg" alt="Varanasi Ganga Aarti">
+      <h3>Varanasi Ganga Aarti</h3>
+      <p>Varanasi</p>
+    </div>
+
+    <div class="card">
+      <img src="images/qutub.webp" alt="Qutub Minar">
+      <h3>Qutub Minar</h3>
+      <p>Delhi</p>
+    </div>
+
+    <div class="card">
+      <img src="images/gate.webp" alt="Gateway of India">
+      <h3>Gateway of India</h3>
+      <p>Mumbai</p>
+    </div>
+
+    <div class="card">
+      <img src="images/ooty.jpg" alt="Ooty">
+      <h3>Ooty</h3>
+      <p>Tamil Nadu</p>
+    </div>
+
+    <div class="card">
+      <img src="images/dar.jpg" alt="Darjeeling Tea Gardens">
+      <h3>Darjeeling Tea Gardens</h3>
+      <p>West Bengal</p>
+    </div>
+
+    <div class="card">
+      <img src="images/goa.jpg" alt="Goa Beaches">
+      <h3>Goa Beaches</h3>
+      <p>Goa</p>
+    </div>
+
+    <div class="card">
+      <img src="images/keralaa.jpg" alt="Kerala Backwaters">
+      <h3>Kerala Backwaters</h3>
+      <p>Kerala</p>
+    </div>
+
+    <div class="card">
+      <img src="images/kashmir.jpg" alt="Ladakh">
+      <h3>Ladakh</h3>
+      <p>Himalayas</p>
+    </div>
+
+    <div class="card">
+      <img src="images/ramoji.jpg" alt="Ramoji Film City">
+      <h3>Ramoji Film City</h3>
+      <p>Hyderabad</p>
+    </div>
+
+    <div class="card">
+      <img src="images/taj-mahal.jpeg" alt="Taj Mahal">
+      <h3>Taj Mahal</h3>
+      <p>Agra</p>
+    </div>
+
+    <div class="card">
+      <img src="images/golden-temple.jpg" alt="Golden Temple">
+      <h3>Golden Temple</h3>
+      <p>Amritsar</p>
+    </div>
+
+    <div class="card">
+      <img src="images/hampi.cms" alt="Hampi">
+      <h3>Hampi</h3>
+      <p>Karnataka</p>
+    </div>
+
+    <div class="card">
+      <img src="images/mysore.jpg" alt="Mysore Palace">
+      <h3>Mysore Palace</h3>
+      <p>Karnataka</p>
+    </div>
+
+    <div class="card">
+      <img src="images/ajanta.jpg" alt="Ajanta & Ellora Caves">
+      <h3>Ajanta & Ellora Caves</h3>
+      <p>Maharashtra</p>
+    </div>
+
+    <div class="card">
+      <img src="images/temple-karnataka.jpg" alt="Meenakshi Temple">
+      <h3>Meenakshi Temple</h3>
+      <p>Madurai</p>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Travel Videos</h2>
+  <div class="video-container">
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/IQz1oGxT4Xc" allowfullscreen></iframe>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/bc6K6cK4uG8" allowfullscreen></iframe>
+    <iframe width="350" height="200" src="https://www.youtube.com/embed/35npVaFGHMY" allowfullscreen></iframe>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">Location Map</h2>
+  <iframe src="https://www.google.com/maps?q=Taj+Mahal&output=embed" width="700" height="400" style="border:0;"></iframe>
+</section>
+<div id="lightbox" class="lightbox">
+  <span class="close">&times;</span>
+  <img class="lightbox-content" id="lightbox-img">
+  <div id="caption"></div>
+  <a class="prev">&#10094;</a>
+  <a class="next">&#10095;</a>
+</div>
+
+
+<footer>
+  <p>© 2026 WanderIndia | Tourism Capstone Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

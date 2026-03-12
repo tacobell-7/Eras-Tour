@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WanderIndia Tourism</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="welcomePopup" class="popup">
+<div class="popup-box">
+<img src="images/travel.jpg" class="popup-img">
+<div class="popup-text">
+<h2>Welcome to WanderIndia</h2>
+<p>Explore the beauty of India's most iconic destinations.</p>
+<button onclick="closePopup()">Explore</button>
+</div>
+</div>
+</div>
+
+<header>
+<h1>WanderIndia</h1>
+<button onclick="toggleTheme()">🌙 Theme</button>
+</header>
+
+<nav class="navbar">
+<a href="tourism.html">Home</a>
+<a href="destinations.html">Destinations</a>
+<a href="gallery.html">Gallery</a>
+<a href="booking.html">Booking</a>
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+<a href="#" onclick="logout()">Logout</a>
+<a href="wishlist.html">Wishlist ❤️ (<span id="wishlistCount">0</span>)</a>
+</nav>
+
+<section class="hero">
+<div class="hero-content">
+<h2>Explore Incredible India</h2>
+<p>Discover India's culture, history and breathtaking destinations.</p>
+<a href="destinations.html">
+<button>Explore Tour Packages</button>
+</a>
+</div>
+</section>
+
+<section>
+<h2 class="section-title">Popular Destinations</h2>
+
+<div class="grid-container">
+
+<div class="card">
+<img src="images/Ganga-Aarti-Varanasi-1.jpg">
+<h3>Varanasi Ganga Aarti</h3>
+<p>📍 Varanasi, Uttar Pradesh</p>
+<p>⭐ Rating: 4.8</p>
+<p>💰 Avg Tour Cost: ₹1800</p>
+<p>🌤 Best Time: Oct – March</p>
+<button onclick="bookPlace('Varanasi Ganga Aarti')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/qutub.webp">
+<h3>Qutub Minar</h3>
+<p>📍 Delhi</p>
+<p>⭐ Rating: 4.7</p>
+<p>💰 Avg Tour Cost: ₹1600</p>
+<p>🌤 Best Time: Oct – Feb</p>
+<button onclick="bookPlace('Qutub Minar')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/gate.webp">
+<h3>Gateway of India</h3>
+<p>📍 Mumbai, Maharashtra</p>
+<p>⭐ Rating: 4.7</p>
+<p>💰 Avg Tour Cost: ₹1700</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Gateway of India')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/ooty.jpg">
+<h3>Ooty</h3>
+<p>📍 Tamil Nadu</p>
+<p>⭐ Rating: 4.8</p>
+<p>💰 Avg Tour Cost: ₹3500</p>
+<p>🌤 Best Time: April – June</p>
+<button onclick="bookPlace('Ooty')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/dar.jpg">
+<h3>Darjeeling Tea Gardens</h3>
+<p>📍 West Bengal</p>
+<p>⭐ Rating: 4.8</p>
+<p>💰 Avg Tour Cost: ₹3200</p>
+<p>🌤 Best Time: March – May</p>
+<button onclick="bookPlace('Darjeeling Tea Gardens')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/goa.jpg">
+<h3>Goa Beaches</h3>
+<p>📍 Goa</p>
+<p>⭐ Rating: 4.8</p>
+<p>💰 Avg Tour Cost: ₹4000</p>
+<p>🌤 Best Time: Nov – Feb</p>
+<button onclick="bookPlace('Goa Beaches')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/keralaa.jpg">
+<h3>Kerala Backwaters</h3>
+<p>📍 Kerala</p>
+<p>⭐ Rating: 4.8</p>
+<p>💰 Avg Tour Cost: ₹4200</p>
+<p>🌤 Best Time: Sept – March</p>
+<button onclick="bookPlace('Kerala Backwaters')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/kashmir.jpg">
+<h3>Ladakh</h3>
+<p>📍 Northern Himalayas</p>
+<p>⭐ Rating: 4.9</p>
+<p>💰 Avg Tour Cost: ₹5000</p>
+<p>🌤 Best Time: May – Sept</p>
+<button onclick="bookPlace('Ladakh')">Book Now</button>
+</div>
+
+<div class="card">
+<img src="images/ramoji.jpg">
+<h3>Ramoji Film City</h3>
+<p>📍 Hyderabad, Telangana</p>
+<p>⭐ Rating: 4.6</p>
+<p>💰 Avg Tour Cost: ₹2000</p>
+<p>🌤 Best Time: Oct – Feb</p>
+<button onclick="bookPlace('Ramoji Film City')">Book Now</button>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 WanderIndia | Tourism Capstone Project</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>

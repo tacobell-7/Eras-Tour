@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Booking - WanderIndia</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>Booking</h1>
+</header>
+
+<nav class="navbar">
+  <a href="tourism.html">Home</a>
+  <a href="destinations.html">Destinations</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="booking.html">Booking</a>
+  <a href="login.html">Login</a>
+  <a href="signup.html">Signup</a>
+</nav>
+
+
+<section>
+  <h2 class="section-title">Book Your Tour Package</h2>
+  <!-- Heading shows selected place -->
+  <h3 id="selectedPlace"></h3>
+
+  <form class="booking-form" action="#" method="post">
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone" required>
+
+    <label for="destination">Select Destination:</label>
+    <select id="destination" name="destination" required>
+      <option value="">-- Choose a Destination --</option>
+      <option>Varanasi Ganga Aarti</option>
+      <option>Qutub Minar</option>
+      <option>Gateway of India</option>
+      <option>Ooty</option>
+      <option>Darjeeling Tea Gardens</option>
+      <option>Goa Beaches</option>
+      <option>Kerala Backwaters</option>
+      <option>Ladakh</option>
+      <option>Ramoji Film City</option>
+      <option>Taj Mahal</option>
+      <option>Golden Temple</option>
+      <option>Hampi</option>
+      <option>Mysore Palace</option>
+      <option>Ajanta & Ellora Caves</option>
+      <option>Meenakshi Temple</option>
+    </select>
+
+    <label for="date">Travel Date:</label>
+    <input type="date" id="date" name="date" required>
+
+    <label for="people">Number of Travelers:</label>
+    <input type="number" id="people" name="people" min="1" required>
+
+    <label for="notes">Special Requests:</label>
+    <textarea id="notes" name="notes" rows="4" placeholder="Any preferences or notes..."></textarea>
+
+    <button type="submit">Confirm Booking</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2026 WanderIndia | Tourism Capstone Project</p>
+</footer>
+
+<script src="script.js"></script>
+<div id="confirmationModal" class="modal">
+  <div class="modal-content">
+    <span id="closeModal">&times;</span>
+    <h2>Booking Confirmed!</h2>
+    <p id="confirmationText"></p>
+  </div>
+</div>
+
+</body>
+</html>
